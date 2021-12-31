@@ -1,0 +1,115 @@
+.main-container{
+ display: grid;
+ place-items: center;
+ height: 100vh;
+}
+.container{
+ height: 500px;
+ width: 40%;
+ min-width: 300px;
+}
+.ListItem{
+ overflow: auto;
+ height: 500px;
+ margin-top: 10px;
+}
+.inputGroup{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ background: rgb(246, 246, 246);
+ border-radius: 7px;
+ overflow: hidden;
+ padding: 5px;
+}.input-field{
+ flex-grow: 7;
+}.leftSide{
+ flex-grow: 3;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.myBtn{
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  display: grid;
+  place-items: center;
+  background: rgb(255, 252, 252);
+  color: blueviolet;
+  cursor: pointer;
+  box-shadow: 2px 1px 8px 1px rgb(0 0 0 / 11%);
+  transition: all .5s;
+}
+.myBtn:hover{
+ color: rgb(255, 252, 252);
+ background: blueviolet;
+}
+.myBtn:active{
+ box-shadow: 2px 1px 7px 1px rgb(0 0 0 / 35%);
+}
+.myBtn-primary{
+ color: rgb(255, 252, 252);
+ background:blueviolet;
+}.myBtn-primary:hover{
+ background:rgb(168, 83, 248);
+}
+.wordBreak{
+  word-wrap: break-word;
+}
+
+.circles{
+  height: 100vh;
+  width: 100vw;
+  background: rgb(246, 246, 246);
+  display: grid;
+  place-items: center;
+
+}
+.contain{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  background: rgb(64, 83, 255);
+  display: grid;
+  place-items: center;
+}
+.circ{
+  position: absolute;
+  bottom: -600px;
+  background: rgb(147, 187, 233);
+  border-radius: 100%;
+  width: 800px;
+  height: 800px;
+}
+.one{
+  animation: one 1s infinite ;
+  animation-timing-function: linear;
+  opacity: .7;
+}.two{
+  animation: one 2s infinite ;
+  animation-timing-function: linear;
+  opacity: .5;
+
+}.three{
+  animation: one 3s infinite ;
+  animation-timing-function: linear;
+  opacity: .3;
+}.four{
+  animation: one 4s infinite ;
+  animation-timing-function: linear;
+  opacity: .1;
+}
+@keyframes one {
+  0%{
+    transform: rotate(0deg) translateY(0px);
+  }
+  50%{
+    transform: rotate(180deg) translateY(40px);
+  }
+  100%{
+    transform: rotate(360deg) translateY(0px);
+  }
+}

@@ -1,0 +1,1 @@
+**React Router makes our website SPA - single page application ; renders the website on client side rather than server side**
